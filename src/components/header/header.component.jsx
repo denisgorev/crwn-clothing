@@ -1,5 +1,9 @@
 import React from "react";
 
+import CartIcon from '../cart-icon/cart-icon.component'
+
+import CartDropdown from '../cart-dropdown/cart-dropdown.component'
+
 import { connect } from "react-redux";
 
 import { Link } from "react-router-dom";
@@ -34,7 +38,10 @@ const Header = ({ currentUser }) => {
 						SIGN IN
 					</Link>
 				)}
+                <CartIcon />
+                
 			</div>
+            <CartDropdown />
 		</div>
 	);
 };
